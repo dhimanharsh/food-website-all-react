@@ -1,10 +1,11 @@
-import React from 'react'
+import React from "react";
+import { useParams } from "react-router";
 
-export default function Receipe({taste}) {
-  console.log(taste,"this")
-    return (
+export default function Receipe({ taste }) {
+  const {receipeid}= useParams()
+  return (
     <div>
-<h1>{taste}</h1>
+      <h1>{receipeid}</h1>
     </div>
-  )
+  );
 }
