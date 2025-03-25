@@ -7,8 +7,8 @@ export function ReceipeCard({ sep }) {
     <section className="productCard">
         <img className="productImage" src={sep.image}></img>
         <h2 className="productTitle">{sep.name}</h2>
-         <Link to={'receipe'} className="productBtn">
-          <i className="fa-solid fa-utensils"></i>Order Now
+         <Link to={`receipe/${sep.id}`} className="productBtn">
+          <i className="fa-solid fa-utensils"></i>See Receipe
         </Link>
         </section>
     </>

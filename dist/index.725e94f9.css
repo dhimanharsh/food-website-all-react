@@ -28,11 +28,11 @@ nav ul li {
   color: #000;
   font-size: 1.5em;
   font-weight: 600;
+}
 
-  &:hover {
-    color: #49832e;
-    text-decoration: underline;
-  }
+nav ul li:hover {
+  color: #49832e;
+  text-decoration: underline;
 }
 
 main {
@@ -75,18 +75,17 @@ main {
 .hero-text a {
   color: wheat;
   background: #49832e;
-  border: 1px #0000;
   border-radius: 25px;
   width: 18%;
   padding: 1em 3em;
   transition: all .4s;
   display: inline-block;
   box-shadow: 0 0 8px 5px #0000003d;
+}
 
-  &:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 8px 5px #00000081;
-  }
+.hero-text a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 8px 5px #00000081;
 }
 
 .foods {
@@ -105,10 +104,10 @@ main {
   transition: all .3s;
   display: flex;
   box-shadow: 0 1px 2px #00000036, 0 2px 4px #00000038, 0 4px 8px #0000001a, 0 8px 16px #0000001a;
+}
 
-  &:hover {
-    transform: scale(1.1);
-  }
+.foods section:hover {
+  transform: scale(1.1);
 }
 
 .arrow-img {
@@ -126,7 +125,6 @@ main {
   color: #fff;
   cursor: pointer;
   background-color: #49832e;
-  border: #0000;
   border-radius: 51px;
   padding: 1.1em;
   box-shadow: 0 0 5px 3px #00000057;
@@ -181,11 +179,11 @@ main {
   padding: 1em;
   transition: all .2s;
   display: flex;
+}
 
-  &:hover {
-    transform: translateY(5px);
-    box-shadow: 0 1px 2px #00000036, 0 2px 4px #00000038, 0 4px 8px #0000001a, 0 8px 16px #0000001a;
-  }
+.productCard:hover {
+  transform: translateY(5px);
+  box-shadow: 0 1px 2px #00000036, 0 2px 4px #00000038, 0 4px 8px #0000001a, 0 8px 16px #0000001a;
 }
 
 .productImage {
@@ -212,15 +210,6 @@ main {
   color: #fff;
   background: #000;
   padding: 1rem 4rem;
-}
-
-.sectionhob {
-  border: 1px solid red;
-  flex-wrap: wrap;
-  width: 90%;
-  height: 70rem;
-  margin: 0 auto;
-  display: flex;
 }
 
 .footer {
@@ -250,7 +239,6 @@ main {
 
 .footer-section ul {
   padding: 0;
-  list-style-type: none;
 }
 
 .footer-section ul li {
@@ -259,7 +247,6 @@ main {
 
 .footer-section ul li a {
   color: #49832e;
-  text-decoration: none;
 }
 
 .footer-section ul li a:hover {
@@ -288,6 +275,25 @@ main {
   justify-content: space-around;
   margin-bottom: 30px;
   display: flex;
+}
+
+.detail-item {
+  text-align: left;
+  flex: 1;
+  margin: 20px;
+}
+
+.detail-item h3 {
+  color: #333;
+}
+
+.detail-item p {
+  color: #666;
+}
+
+.icon {
+  width: 50px;
+  height: auto;
 }
 
 .contact-form {
@@ -331,25 +337,6 @@ main {
   justify-content: space-around;
   margin-bottom: 30px;
   display: flex;
-}
-
-.detail-item {
-  text-align: left;
-  flex: 1;
-  margin: 20px;
-}
-
-.detail-item h3 {
-  color: #333;
-}
-
-.detail-item p {
-  color: #666;
-}
-
-.icon {
-  width: 50px;
-  height: auto;
 }
 
 .about-image {
@@ -398,23 +385,41 @@ main {
   box-shadow: 0 0 5px 3px #00000057;
 }
 
-.loader {
-  background: linear-gradient(currentColor 0 0) 0 100% / 0% 3px no-repeat;
-  width: fit-content;
-  padding-bottom: 8px;
-  font-family: sans-serif;
-  font-size: 30px;
-  font-weight: bold;
-  animation: 2s linear infinite l2;
+.eachres {
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  padding: 2em;
+  display: flex;
 }
 
-.loader:before {
-  content: "Loading...";
+.eachres h1 {
+  color: #49832e;
 }
 
-@keyframes l2 {
-  to {
-    background-size: 100% 3px;
-  }
+.eachres section {
+  flex-direction: column;
+  width: 50%;
+  height: 33rem;
+  padding-left: 3rem;
+  display: flex;
+}
+
+.eachres section img {
+  width: 50%;
+}
+
+.eachres section h2 {
+  color: #49832e;
+}
+
+.eachres section ul li {
+  list-style: circle;
+}
+
+.receipeImg {
+  border-radius: 50px;
+  height: 20em;
 }
 /*# sourceMappingURL=index.725e94f9.css.map */

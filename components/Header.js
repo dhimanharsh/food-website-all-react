@@ -4,11 +4,11 @@ import { Link } from 'react-router'
 export default function Header() {
   return (
     <>    <header>
-    <nav>
-      <ul>
-        <Link to={'/'}><li>Home</li></Link>
-        <Link to={'/contact'}><li>Contact</li></Link>
-        <Link to={'/about'}><li>About</li></Link>
+    <nav className="h-12 flex items-center justify-end bg-transparent">
+      <ul className="flex pr-20 justify-end gap-16">
+        <Link to={'/'}><li className="text-xl cursor-pointer text-black font-semibold hover:text-[#49832e] hover:underline">Home</li></Link>
+        <Link to={'/contact'}><li className="text-xl cursor-pointer text-black font-semibold hover:text-[#49832e] hover:underline">Contact</li></Link>
+        <Link to={'/about'}><li className="text-xl cursor-pointer text-black font-semibold hover:text-[#49832e] hover:underline">About</li></Link>
       </ul>
     </nav>
   </header>
@@ -29,7 +29,7 @@ export default function Header() {
         laboriosam corporis id
       </p>
      
-      <a href="#">Order Now</a>
+      <a href="#">See Now</a>
     </div>
   </main>
 

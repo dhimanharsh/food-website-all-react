@@ -1,6 +1,9 @@
+
+
+
 * {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   list-style: none;
   text-decoration: none;
   box-sizing: border-box;
@@ -8,42 +11,47 @@
   font-family: "Kanit", serif;
 }
 
-nav {
+ nav {
   height: 3rem;
   display: flex;
   align-items: center;
   justify-content: end;
   background: transparent;
 }
+
 nav ul {
   display: flex;
   padding-right: 5rem;
   justify-content: end;
   gap: 4rem;
-}
-nav ul li {
+} 
+
+ nav ul li {
   font-size: 1.5em;
   cursor: pointer;
   color: black;
   font-weight: 600;
-  &:hover {
-    color: #49832e;
-    text-decoration: underline;
-
-  }
 }
+
+nav ul li:hover {
+  color: #49832e;
+  text-decoration: underline;
+} 
+
 /* main */
 main {
   height: 60rem;
   width: 99.99%;
 }
+
 #hero-img {
   width: 99.99%;
   height: 60em;
   position: absolute;
-  top: 0px;
+  top: 0;
   z-index: -1;
 }
+
 .hero-text {
   position: relative;
   left: 5em;
@@ -53,19 +61,22 @@ main {
   flex-direction: column;
   justify-content: space-around;
 }
+
 .hero-text h2 {
   font-size: 7rem;
   font-family: "Dancing Script", serif;
 }
+
 .hero-text h1 {
   font-size: 8rem;
   font-weight: 600;
 }
+
 .hero-text span {
   color: #49832e;
 }
+
 .hero-text a {
-  border: 1px transparent;
   background: #49832e;
   padding: 1em 3em;
   display: inline-block;
@@ -74,13 +85,14 @@ main {
   border-radius: 25px;
   transition: all 0.4s;
   box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.24);
-  &:hover {
-    transform: scale(1.1);
-    box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.507);
-  }
 }
-/* this is other */
 
+.hero-text a:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.507);
+}
+
+/* Foods Section */
 .foods {
   height: 20rem;
   margin: 0 auto;
@@ -88,6 +100,7 @@ main {
   display: flex;
   justify-content: space-between;
 }
+
 .foods section {
   width: 30%;
   display: flex;
@@ -97,43 +110,50 @@ main {
   transition: all 0.3s;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.212), 0px 2px 4px rgba(0, 0, 0, 0.219),
     0px 4px 8px rgba(0, 0, 0, 0.1), 0px 8px 16px rgba(0, 0, 0, 0.1);
-  &:hover {
-    transform: scale(1.1);
-  }
 }
+
+.foods section:hover {
+  transform: scale(1.1);
+}
+
 .arrow-img {
   width: 25rem;
   display: flex;
   justify-content: space-between;
   align-items: end;
 }
+
 .arrow-img img {
   height: 8em;
 }
+
 .arrow-img i {
   padding: 1.1em;
-  border: transparent;
   border-radius: 51px;
   background-color: #49832e;
   color: white;
   cursor: pointer;
   box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.342);
 }
+
 .three-cards {
   width: 100%;
   padding-left: 1em;
 }
+
 .three-cards h2 {
   font-size: 2.5em;
 }
+
 .three-cards h3 {
   font-size: 1.5em;
 }
+
 .three-cards p {
   color: #49832e;
 }
 
-/*  */
+/* Order Our Best */
 .order-our-best {
   width: 85%;
   margin: 0 auto;
@@ -144,6 +164,7 @@ main {
   justify-content: center;
   gap: 1em;
 }
+
 .heading {
   width: 85%;
   margin: 0 auto;
@@ -151,13 +172,13 @@ main {
   font-weight: 600;
 }
 
-/*  */
-
+/* Product Card */
 .productTitle {
   font-weight: 400;
   font-size: 1.7rem;
   color: black;
 }
+
 .productCard {
   width: 24%;
   height: 25em;
@@ -166,13 +187,15 @@ main {
   flex-direction: column;
   transition: all 0.2s;
   justify-content: space-between;
-  &:hover {
-    transform: translateY(5px);
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.212),
-      0px 2px 4px rgba(0, 0, 0, 0.219), 0px 4px 8px rgba(0, 0, 0, 0.1),
-      0px 8px 16px rgba(0, 0, 0, 0.1);
-  }
 }
+
+.productCard:hover {
+  transform: translateY(5px);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.212),
+    0px 2px 4px rgba(0, 0, 0, 0.219), 0px 4px 8px rgba(0, 0, 0, 0.1),
+    0px 8px 16px rgba(0, 0, 0, 0.1);
+}
+
 .productImage {
   height: 13em;
 }
@@ -187,25 +210,19 @@ main {
   align-items: center;
   gap: 1em;
 }
+
 .brilliant-restuarnt h2 {
   font-size: 4.5rem;
   color: white;
 }
+
 .brilliant-restuarnt a {
   padding: 1rem 4rem;
   color: white;
   background: #000;
 }
 
-.sectionhob {
-  border: 1px solid red;
-  display: flex;
-  width: 90%;
-  margin: 0 auto;
-  flex-wrap: wrap;
-  height: 70rem;
-}
-
+/* Footer */
 .footer {
   background-color: #f8f8f8;
   padding: 20px;
@@ -233,7 +250,6 @@ main {
 }
 
 .footer-section ul {
-  list-style-type: none;
   padding: 0;
 }
 
@@ -242,7 +258,6 @@ main {
 }
 
 .footer-section ul li a {
-  text-decoration: none;
   color: #49832e;
 }
 
@@ -255,7 +270,8 @@ main {
   font-size: 14px;
   color: #999;
 }
-/* contact us */
+
+/* Contact Us */
 .contact-us {
   background-color: #fff;
   padding: 40px;
@@ -319,7 +335,7 @@ main {
   background-color: #49832e; /* Darker shade on hover */
 }
 
-/* about us */
+/* About Us */
 .about-us {
   background-color: #f9f9f9;
   padding: 40px;
@@ -336,25 +352,6 @@ main {
   justify-content: space-around;
   flex-wrap: wrap;
   margin-bottom: 30px;
-}
-
-.detail-item {
-  flex: 1;
-  margin: 20px;
-  text-align: left;
-}
-
-.detail-item h3 {
-  color: #333;
-}
-
-.detail-item p {
-  color: #666;
-}
-
-.icon {
-  width: 50px; /* Adjust size as needed */
-  height: auto;
 }
 
 .about-image {
@@ -380,9 +377,11 @@ main {
   align-items: flex-end;
   justify-content: end;
 }
+
 .input-field input {
   padding: 0.6em;
 }
+
 .input-field button {
   padding: 0.8em 1em;
   outline: none;
@@ -400,17 +399,36 @@ main {
   box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.342);
   cursor: pointer;
 }
-/* HTML: <div class="loader"></div> */
-.loader {
-  width: fit-content;
-  font-weight: bold;
-  font-family: sans-serif;
-  font-size: 30px;
-  padding-bottom: 8px;
-  background: linear-gradient(currentColor 0 0) 0 100%/0% 3px no-repeat;
-  animation: l2 2s linear infinite;
+
+/* responsive */
+.eachres{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+  width: 90%;
+  margin: 0 auto;
 }
-.loader:before {
-  content:"Loading..."
+.eachres h1{
+  color: #49832e;
 }
-@keyframes l2 {to{background-size: 100% 3px}}
+.eachres section{
+  width: 50%;
+  height: 33rem;
+display: flex;
+flex-direction: column;
+padding-left: 3rem;
+}
+.eachres section img{
+  width: 50%;
+}
+.eachres section h2{
+  color: #49832e;
+}
+.eachres section ul li{
+  list-style: circle;
+}
+.receipeImg{
+  height: 20em;
+  border-radius: 50px;
+}

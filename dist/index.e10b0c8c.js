@@ -3039,17 +3039,17 @@ const AppLayout = ()=>{
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
                 fileName: "src/script.js",
-                lineNumber: 60,
+                lineNumber: 61,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Outlet), {}, void 0, false, {
                 fileName: "src/script.js",
-                lineNumber: 61,
+                lineNumber: 62,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
                 fileName: "src/script.js",
-                lineNumber: 62,
+                lineNumber: 63,
                 columnNumber: 7
             }, undefined)
         ]
@@ -3061,7 +3061,7 @@ const routerRoute = (0, _reactRouter.createBrowserRouter)([
         path: "/",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
             fileName: "src/script.js",
-            lineNumber: 70,
+            lineNumber: 71,
             columnNumber: 14
         }, undefined),
         children: [
@@ -3069,7 +3069,7 @@ const routerRoute = (0, _reactRouter.createBrowserRouter)([
                 path: "/",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Communication, {}, void 0, false, {
                     fileName: "src/script.js",
-                    lineNumber: 72,
+                    lineNumber: 73,
                     columnNumber: 29
                 }, undefined)
             },
@@ -3077,7 +3077,7 @@ const routerRoute = (0, _reactRouter.createBrowserRouter)([
                 path: "/contact",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactDefault.default), {}, void 0, false, {
                     fileName: "src/script.js",
-                    lineNumber: 73,
+                    lineNumber: 74,
                     columnNumber: 36
                 }, undefined)
             },
@@ -3085,16 +3085,16 @@ const routerRoute = (0, _reactRouter.createBrowserRouter)([
                 path: "/about",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutDefault.default), {}, void 0, false, {
                     fileName: "src/script.js",
-                    lineNumber: 74,
+                    lineNumber: 75,
                     columnNumber: 34
                 }, undefined)
             },
             {
-                path: "receipe/:receipeid",
+                path: "receipe/:resId",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _receipeDefault.default), {}, void 0, false, {
                     fileName: "src/script.js",
-                    lineNumber: 75,
-                    columnNumber: 46
+                    lineNumber: 76,
+                    columnNumber: 42
                 }, undefined)
             }
         ]
@@ -3105,11 +3105,9 @@ root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.RouterProv
     router: routerRoute
 }, void 0, false, {
     fileName: "src/script.js",
-    lineNumber: 81,
+    lineNumber: 82,
     columnNumber: 13
-}, undefined)); // todolist
- // employent system management
- // add and show product
+}, undefined));
 var _c, _c1;
 $RefreshReg$(_c, "Communication");
 $RefreshReg$(_c1, "AppLayout");
@@ -28222,11 +28220,14 @@ function Header() {
             "    ",
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("header", {
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
+                    className: "h-12 flex items-center justify-end bg-transparent",
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                        className: "flex pr-20 justify-end gap-16",
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Link), {
                                 to: '/',
                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                    className: "text-xl cursor-pointer text-black font-semibold hover:text-[#49832e] hover:underline",
                                     children: "Home"
                                 }, void 0, false, {
                                     fileName: "src/components/Header.js",
@@ -28241,6 +28242,7 @@ function Header() {
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Link), {
                                 to: '/contact',
                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                    className: "text-xl cursor-pointer text-black font-semibold hover:text-[#49832e] hover:underline",
                                     children: "Contact"
                                 }, void 0, false, {
                                     fileName: "src/components/Header.js",
@@ -28255,6 +28257,7 @@ function Header() {
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Link), {
                                 to: '/about',
                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                    className: "text-xl cursor-pointer text-black font-semibold hover:text-[#49832e] hover:underline",
                                     children: "About"
                                 }, void 0, false, {
                                     fileName: "src/components/Header.js",
@@ -28345,7 +28348,7 @@ function Header() {
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                                 href: "#",
-                                children: "Order Now"
+                                children: "See Now"
                             }, void 0, false, {
                                 fileName: "src/components/Header.js",
                                 lineNumber: 32,
@@ -28770,7 +28773,7 @@ function ReceipeCard({ sep }) {
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Link), {
-                    to: 'receipe',
+                    to: `receipe/${sep.id}`,
                     className: "productBtn",
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
@@ -28780,7 +28783,7 @@ function ReceipeCard({ sep }) {
                             lineNumber: 11,
                             columnNumber: 11
                         }, this),
-                        "Order Now"
+                        "See Receipe"
                     ]
                 }, void 0, true, {
                     fileName: "src/components/ReceipeCard.js",
@@ -29415,43 +29418,158 @@ $parcel$ReactRefreshHelpers$e1cb.prelude(module);
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "default", ()=>Receipe);
+parcelHelpers.export(exports, "default", ()=>Recipe);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _reactRouter = require("react-router");
 var _s = $RefreshSig$();
-function Receipe({ taste }) {
+function Recipe() {
     _s();
-    const { receipeid } = (0, _reactRouter.useParams)();
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-            children: receipeid
-        }, void 0, false, {
-            fileName: "src/components/Receipe.js",
-            lineNumber: 8,
-            columnNumber: 7
-        }, this)
+    const { resId } = (0, _reactRouter.useParams)(); // Destructure resId directly
+    const [data, setData] = (0, _react.useState)(null); // Initialize as null for better conditional rendering
+    const [error, setError] = (0, _react.useState)(null); // State to handle errors
+    (0, _react.useEffect)(()=>{
+        async function fetchRecipe() {
+            try {
+                const response = await fetch(`https://dummyjson.com/recipes/${resId}`);
+                if (!response.ok) throw new Error("Network response was not ok");
+                const recipeData = await response.json();
+                setData(recipeData);
+            } catch (err) {
+                console.error(err);
+                setError(err.message);
+            }
+        }
+        fetchRecipe();
+    }, [
+        resId
+    ]);
+    if (error) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: [
+            "Error: ",
+            error
+        ]
+    }, void 0, true, {
+        fileName: "src/components/Receipe.js",
+        lineNumber: 27,
+        columnNumber: 12
+    }, this);
+    if (!data) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: "Loading..."
     }, void 0, false, {
         fileName: "src/components/Receipe.js",
-        lineNumber: 7,
+        lineNumber: 31,
+        columnNumber: 12
+    }, this);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "eachres",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                        className: "receipeImg",
+                        src: data.image,
+                        alt: data.name
+                    }, void 0, false, {
+                        fileName: "src/components/Receipe.js",
+                        lineNumber: 37,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        children: data.name
+                    }, void 0, false, {
+                        fileName: "src/components/Receipe.js",
+                        lineNumber: 38,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                        children: [
+                            "Meal-Type: ",
+                            data.mealType
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/Receipe.js",
+                        lineNumber: 39,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/Receipe.js",
+                lineNumber: 36,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                        children: "Ingredients"
+                    }, void 0, false, {
+                        fileName: "src/components/Receipe.js",
+                        lineNumber: 42,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                        children: data.ingredients.map((ingredient, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                children: ingredient
+                            }, index, false, {
+                                fileName: "src/components/Receipe.js",
+                                lineNumber: 45,
+                                columnNumber: 13
+                            }, this) // Add key prop for list items
+                        )
+                    }, void 0, false, {
+                        fileName: "src/components/Receipe.js",
+                        lineNumber: 43,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                        children: "Instructions"
+                    }, void 0, false, {
+                        fileName: "src/components/Receipe.js",
+                        lineNumber: 48,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                        children: data.instructions.map((instruction, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                children: instruction
+                            }, index, false, {
+                                fileName: "src/components/Receipe.js",
+                                lineNumber: 51,
+                                columnNumber: 13
+                            }, this) // Add key prop for list items
+                        )
+                    }, void 0, false, {
+                        fileName: "src/components/Receipe.js",
+                        lineNumber: 49,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/Receipe.js",
+                lineNumber: 41,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/Receipe.js",
+        lineNumber: 35,
         columnNumber: 5
     }, this);
 }
-_s(Receipe, "gYd8xQiGmn1F+Ltz3BDd3qg9RiM=", false, function() {
+_s(Recipe, "bOzr/BAvp1pGaDx4VLJJ3lXO5Zc=", false, function() {
     return [
         (0, _reactRouter.useParams)
     ];
 });
-_c = Receipe;
+_c = Recipe;
 var _c;
-$RefreshReg$(_c, "Receipe");
+$RefreshReg$(_c, "Recipe");
 
   $parcel$ReactRefreshHelpers$e1cb.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router":"dXVwI"}]},["aQL8O","cWfAl","8ZNvh"], "8ZNvh", "parcelRequire94c2")
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router":"dXVwI","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["aQL8O","cWfAl","8ZNvh"], "8ZNvh", "parcelRequire94c2")
 
 //# sourceMappingURL=index.e10b0c8c.js.map

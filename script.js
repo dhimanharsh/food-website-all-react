@@ -51,8 +51,9 @@ const Communication = () => {
           return <ReceipeCard key={e.id} sep={e}></ReceipeCard>;
         })}
       </div>
-    </>)
-}
+    </>
+  );
+};
 
 const AppLayout = () => {
   return (
@@ -72,14 +73,10 @@ const routerRoute = createBrowserRouter([
       { path: "/", element: <Communication></Communication> },
       { path: "/contact", element: <Contact></Contact> },
       { path: "/about", element: <About></About> },
-      { path: "receipe/:receipeid", element: <Receipe></Receipe> },
+      { path: "receipe/:resId", element: <Receipe></Receipe> },
     ],
   },
 ]);
 
 const root = createRoot(document.getElementById("root"));
 root.render(<RouterProvider router={routerRoute}></RouterProvider>);
-
-// todolist
-// employent system management
-// add and show product
